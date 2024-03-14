@@ -18,7 +18,7 @@ export default function QueryProcessor(query: string): string {
   }
   if (query.toLowerCase().includes("largest")) {
     return (
-      "98"
+      "89"
     );
   }
   if (query.toLowerCase().includes("plus")) {
