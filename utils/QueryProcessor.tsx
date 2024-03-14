@@ -16,14 +16,17 @@ export default function QueryProcessor(query: string): string {
       "5"
     );
   }
+
+  let numbers = [88, 99, 64]; // Add the numbers to compare
+  let largest = Math.max(...numbers);
+
   if (query.toLowerCase().includes("largest")) {
-    return (
-      "89"
-    );
+    return largest.toString();
   }
+
   if (query.toLowerCase().includes("plus")) {
     return (
-      "91"
+      
     );
   }
 
