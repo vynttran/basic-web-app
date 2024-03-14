@@ -11,6 +11,11 @@ export default function QueryProcessor(query: string): string {
       "My Andrew ID is vtran."
     );
   }
+  if (query.toLowerCase().includes("name")) {
+    return (
+      "Vy"
+    );
+  }
 
   return "";
 }
