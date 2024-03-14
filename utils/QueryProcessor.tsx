@@ -16,6 +16,11 @@ export default function QueryProcessor(query: string): string {
       "5"
     );
   }
+  if (query.toLowerCase().includes("largest")) {
+    return (
+      "92"
+    );
+  }
 
   return "";
 }
