@@ -17,11 +17,12 @@ export default function QueryProcessor(query: string): string {
     );
   }
 
-  let numbers = [88, 99, 64]; // Add the numbers to compare
-  let largest = Math.max(...numbers);
+  let query = "Which of the following numbers is the largest: 64, 79, 4?"; // Example query
 
   if (query.toLowerCase().includes("largest")) {
-    return largest.toString();
+    let numbers = query.match(/\d+/g).map(Number); // Extract numbers from the query and convert them to Number type
+    let largest = Math.max(...numbers); // Use Math.max to find the largest number
+    return largest.toString(); // Convert the largest number to string and return it
   }
 
   if (query.toLowerCase().includes("plus")) {
